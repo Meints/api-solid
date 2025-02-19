@@ -4,6 +4,7 @@
   "description": "GymPass style app.",
   "main": "index.js",
   "scripts": {
+    "dev": "docker start api-solid-pg && npm run start:dev",
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
